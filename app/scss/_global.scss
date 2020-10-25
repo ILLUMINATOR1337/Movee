@@ -1,0 +1,27 @@
+html{
+	box-sizing: border-box;
+	height: 100%;
+}
+*,*::before,*::after{
+	box-sizing: inherit;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: $text;
+}
+ul,
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,
+body{
+	position: relative;
+	overflow-x: hidden;
+}
+body{
+   font-family: 'Montserrat', sans-serif;
+    
+}
