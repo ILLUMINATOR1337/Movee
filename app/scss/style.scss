@@ -1,13 +1,126 @@
 @import "vars";
 @import "global";
 
-html{
-	box-sizing: border-box;
+.header{
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-*,*::before,*::after{
-	box-sizing: inherit;
+.header__top-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 83px;
+}
+.menu__list{
+	display: flex;
+	font-weight: 500;
+	font-size: 18px;
+	li + li{
+		margin-left: 50px;
+	}
+}
+.header__phone{
+	font-size: 24px;
+	font-weight: 600;
+	border-bottom: 1px solid #333333;
 }
 
-.box{
+.header__bottom-inner{
 	display: flex;
+	position: relative;
+}
+.offer{
+	&__title{
+		font-weight: 700;
+		font-size: 70px;
+		max-width: 480px;
+		margin-bottom: 23px;
+	}
+	&__text{
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 37px;
+		margin-bottom: 50px;
+	}
+	&__btn-box{
+		width: 304px;
+		height: 60px;
+		position: relative;
+		margin-bottom: 130px;
+		&::before{
+			content: '';
+			position: absolute;
+			border: 2px solid #fff;
+			bottom: -10px;
+			right: -10px;
+			width: 304px;
+			height: 60px;
+		}
+		.offer__btn{
+			padding: 15px 95px;
+			background-color: $red;
+			color: #fff;
+			font-weight: 600;
+			font-size: 24px;
+			position: relative;	
+		}
+	}
+	
+}
+
+.services{
+	display: flex;
+	justify-content: space-between;
+	max-width: 546px;
+	width: 100%;
+	padding-bottom: 83px;
+	&__moving{
+		position: relative;
+		padding-left: 60px;
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url('../images/icons/truck.svg');
+			background-repeat: no-repeat;
+			width: 52px;
+			height: 39px;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__packing{
+		position: relative;
+		padding-left: 50px;
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url('../images/icons/pakage.svg');
+			background-repeat: no-repeat;
+			width: 40px;
+			height: 38px;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__fix-price{
+		position: relative;
+		padding-left: 50px;
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url('../images/icons/money.svg');
+			background-repeat: no-repeat;
+			width: 41px;
+			height: 41px;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+.human__image{
+	margin-bottom: -10px;
+	margin-left: 67px;
 }
