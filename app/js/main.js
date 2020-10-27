@@ -1,5 +1,7 @@
 $(function(){
 
+
+
    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
       $(this)
         .addClass('active').siblings().removeClass('active')
@@ -8,7 +10,23 @@ $(function(){
 
     $('.slider').slick({
       prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left.svg"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg"></button>'
+      nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg"></button>',
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 950,
+          settings: {
+            dots: true,
+            arrows: false
+          }
+        },
+        
+      ]
     });
 
 });

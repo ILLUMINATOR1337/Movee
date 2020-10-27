@@ -23,6 +23,20 @@
 		margin-left: 50px;
 	}
 }
+
+.menu__btn{
+	display: none;
+	width: 44px;
+	cursor: pointer;
+	div + div{
+		margin-top: 10px;
+	}
+	div{
+		height: 2px;
+		background-color: $text;
+	}
+}
+
 .header__phone {
 	font-size: 24px;
 	font-weight: 600;
@@ -47,7 +61,7 @@
 		margin-bottom: 50px;
 	}
 	&__btn-box {
-		width: 304px;
+		max-width: 304px;
 		height: 60px;
 		position: relative;
 		margin-bottom: 130px;
@@ -120,9 +134,15 @@
 		}
 	}
 }
+.human__image-medium{
+	display: none;
+}
 .human__image {
 	margin-bottom: -4px;
 	margin-left: 67px;
+	img{
+		max-width: 100%;
+	}
 }
 
 /*кнопка звонка*/
@@ -356,6 +376,8 @@
 
 // end header
 
+// start process
+
 .process {
 	padding-bottom: 45px;
 }
@@ -413,6 +435,9 @@
 	}
 }
 
+// end process
+
+// start price
 .price {
 	padding-top: 59px;
 	padding-bottom: 67px;
@@ -470,8 +495,20 @@
 		padding: 14px 79px 12px 77px;
 		background-color: $yellow;
 		cursor: pointer;
+		margin-bottom: 20px;
+		display: block;
 	}
+	
 }
+.price__item-btn.price__btn-small{
+	display: none;
+}
+.all__price{
+	display: inline;
+	border-bottom: 1px solid $text;
+	display: none;
+}
+// end price
 
 // start slider
 .car-park{
@@ -546,6 +583,11 @@ padding-top: 48px;
 		}
 	}
 }
+
+.slider__info-small{
+	font-size: 12px;
+	display: none;
+}
 .check-left{
 	position: absolute;
 	&::before{
@@ -605,7 +647,10 @@ padding-top: 48px;
 	justify-content: space-between;
 }
 .reviews__item{
-	min-width: 420px;
+	max-width: 420px;
+	& + &{
+		margin-left: 15px;
+	}
 	&-name{
 		font-weight: 600;
 		font-size: 24px;
@@ -703,6 +748,7 @@ padding-top: 48px;
 	}
 	.order__check-btn{
 		display: block;
+		font-size: 12px;
 	}
 	
 }
@@ -819,3 +865,6 @@ padding-top: 48px;
 	}
 }
 // end footer
+
+
+@import "media"
