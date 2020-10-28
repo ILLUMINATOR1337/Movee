@@ -48,6 +48,7 @@
 	display: none;
 	width: 44px;
 	cursor: pointer;
+	transition: all .3s ease;
 	div + div{
 		margin-top: 10px;
 	}

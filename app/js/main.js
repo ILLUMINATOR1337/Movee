@@ -1,5 +1,9 @@
 $(function(){
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('nav-active');
+    $('.menu__btn').toggleClass('toggle');
+  });
 
 
    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
