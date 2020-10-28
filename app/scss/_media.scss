@@ -206,6 +206,9 @@
          display: none;
       }
    }
+   .reviews__item-info{
+      justify-content: center;
+   }
 }
 
 @media (max-width: 800px) {
@@ -404,6 +407,9 @@
    }
    .footer__social{
       margin-left: 0;
+   }
+   .reviews__item-info{
+      justify-content: start;
    }
    
 }

@@ -28,5 +28,11 @@ $(function(){
         
       ]
     });
+    $(".reviews__rating").rateYo({
+      starWidth: "40px",
+      normalFill: "#FF0000",
+      readOnly: true,
+      starWidth: "15px"
+    });
 
 });
