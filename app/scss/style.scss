@@ -693,13 +693,18 @@ padding-top: 48px;
 	margin-bottom: 10px;
 }
 .order__text{
-	margin-bottom: 47px;
+	margin-bottom: 7px;
 }
 .order__inner{
 	form{
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		input{
+			outline: none;
+			padding-left: 5px;
+			padding-right: 5px;
+			margin-top: 40px;
 			max-height: 34px;
 			border: none;
 			border-bottom: 1px solid $text;
@@ -721,6 +726,10 @@ padding-top: 48px;
 			height: 50px;
 			position: relative;
 			margin-bottom: 22px;
+			.check__btn{
+				margin-top: 14px;
+				margin-right: 10px !important;
+			}
 		&::before {
 			content: "";
 			position: absolute;
@@ -730,8 +739,13 @@ padding-top: 48px;
 			width: 250px;
 			height: 50px;
 		}
+		p{
+			font-size: 12px;
+		}
 		}
 		.order__btn{
+			white-space: nowrap;
+			max-height: 50px;
 			border: none;
 			padding: 13px 31px;
 			background-color: $red;
@@ -741,10 +755,6 @@ padding-top: 48px;
 			position: relative;
 			cursor: pointer;
 		}
-	}
-	
-	.check__btn{
-		margin-right: 10px !important;
 	}
 	.order__check-btn{
 		display: block;
@@ -805,7 +815,8 @@ padding-top: 48px;
 	justify-content: space-between;
 }
 .footer__info{
-	width: 310px;
+	max-width: 310px;
+	width: 100%;
 	&-title{
 		margin-bottom: 44px;
 		
@@ -861,8 +872,14 @@ padding-top: 48px;
 		display: inline;
 		font-weight: 500;
 		font-size: 20px;
-		margin-left: 39px;
+		margin-left: 41px;
 	}
+}
+.footer__order-btn{
+	padding-top: 17px;
+	display: none;
+	width: 292px;
+	height: 60px;
 }
 // end footer
 
